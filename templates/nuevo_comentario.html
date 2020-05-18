@@ -1,0 +1,29 @@
+{% extends "esqueleto.html" %}
+
+{% block contenido %}
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+            <h1>Que piensas?</h1>
+                <form id="frmNuevoComentario" method="post" action = "/foro/publicaciones/comentarios/nuevo?id={{ id_publicacion }}" onsubmit="return check()">
+                        <p>
+                            <label for="edTexto">Que quieres comentar</label>
+                            <input type="text" id="edTexto" name="edTexto" placeholder="En que estas pensando..."/>
+                        </p>
+
+                        <p><input type="submit" value="Comentar"></input>              <a href="/foro">Volver</a></p>
+                </form>
+            </div>
+      </div>
+    </div>
+  </div>
+<script>
+    function check()
+    {
+        const edTexto = document.getElementById("edTexto");
+
+        return (edTexto.value.trim().length > 0)
+    }
+</script>
+{% endblock %}

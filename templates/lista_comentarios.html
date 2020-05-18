@@ -1,0 +1,29 @@
+{% extends "esqueleto.html" %}
+
+
+{% block contenido %}
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+            <h1>{{publicacion.titulo}}</h1>
+
+                {% if comentarios.count() > 0 %}
+                    {% for comentario in comentarios %}
+                        {% include "entrada_comentario.html" %}
+                        {% if usuario.email == comentario.email_creador %}
+                            (<a href="/foro/publicaciones/comentarios/elimina?id={{ comentario.key.urlsafe() }}">eliminar</a>)
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <p><b>Aun no hay comentarios</b></p>
+                {% endif %}
+                <p>
+                    <a href="/foro/publicaciones/comentarios/nuevo?id={{ publicacion.key.urlsafe() }}">Comentar</a>
+                    <a href="/foro">Volver</a>
+                </p>
+            </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

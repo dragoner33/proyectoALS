@@ -1,0 +1,38 @@
+{% extends "esqueleto.html" %}
+
+{% block contenido %}
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+            {% if publicaciones.count() > 0 %}
+                {% for publicacion in publicaciones %}
+                    {% include "entrada_publicacion.html" %}
+                    <a href="/foro/publicaciones/comentarios?id={{ publicacion.key.urlsafe() }}">ver comentarios</a>
+
+                    <a href="/foro/publicaciones/likes?id={{ publicacion.key.urlsafe() }}">me gusta</a>
+                        {% if usuario.email == publicacion.email_creador %}
+                            <a href="/foro/publicaciones/elimina?id={{ publicacion.key.urlsafe() }}">eliminar</a>
+                        {% endif %}
+                        {% if usuario.email == publicacion.email_creador %}
+                            <a href="/foro/publicaciones/likes/lista?id={{ publicacion.key.urlsafe() }}">usuarios a los que les ha gustado</a>
+                        {% endif %}
+
+
+                {% endfor %}
+            {% else %}
+                <p><b>No hay publicaciones.</b></p>
+            {% endif %}
+            <p>
+                <a href="/foro/publicaciones/nueva?email={{ usuario.email }}">Nueva publicacion</a>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "esqueleto.html" %}
+
+{% block contenido %}
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+            <h1>Nueva Publicación</h1>
+                <form id="frmNuevaPublicacion" method="post" action = "/foro/publicaciones/nueva?email={{ email_creador }}" onsubmit="return check()">
+                        <p>
+                            <label for="edTitulo">Titulo</label>
+                            <input type="text" id="edTitulo" name="edTitulo" placeholder="Introduzca el titulo/tema de la publicación"/>
+                        </p>
+
+                        <p><input type="submit" value="Crear"></input>              <a href="/foro">Volver</a></p>
+                </form>
+            </div>
+      </div>
+    </div>
+  </div>
+<script>
+    function check()
+    {
+        const edTitulo = document.getElementById("edTitulo");
+
+        return (edTitulo.value.trim().length > 0)
+    }
+</script>
+{% endblock %}

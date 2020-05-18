@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Saludo</title>
+</head>
+<body>
+    <h1>Saludo</h1>
+    <p>Hola, <i>{{ nombre_usr }}</i>.</p>
+
+    {% if invitados.count() > 0 %}
+        <ul>
+        {% for invitado in invitados %}
+            <li>{{ invitado.hora }} - {{ invitado.nombre }} - {{invitado.email}}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p><b>No hay</b></p>
+    {% endif %}
+</body>
+</html>

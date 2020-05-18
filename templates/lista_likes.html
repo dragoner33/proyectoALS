@@ -1,0 +1,25 @@
+{% extends "esqueleto.html" %}
+
+
+{% block contenido %}
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+            <h1>{{publicacion.titulo}}</h1>
+
+                {% if likes.count() > 0 %}
+                    {% for like in likes %}
+                        {% include "entrada_likes.html" %}
+                    {% endfor %}
+                {% else %}
+                    <p><b>Aun no hay likes</b></p>
+                {% endif %}
+                <p>
+                    <a href="/foro">Volver</a>
+                </p>
+            </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

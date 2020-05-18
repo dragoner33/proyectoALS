@@ -1,0 +1,56 @@
+application: hello
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /foro
+  script: handlers.main.app
+  login: required
+
+- url: /templates
+  static_dir: templates
+  application_readable: true
+
+- url: /foro/publicaciones/nueva
+  script: handlers.publicaciones.nueva.app
+  login: required
+
+- url: /foro/publicaciones/elimina
+  script: handlers.publicaciones.elimina.app
+  login: required
+
+- url: /foro/publicaciones/comentarios
+  script: handlers.comentarios.lista.app
+  login: required
+
+- url: /foro/publicaciones/comentarios/nuevo
+  script: handlers.comentarios.nuevo.app
+  login: required
+
+- url: /foro/publicaciones/comentarios/elimina
+  script: handlers.comentarios.elimina_comentario.app
+  login: required
+
+- url: /foro/publicaciones/likes
+  script: handlers.likes.nuevo_like.app
+  login: required
+
+- url: /foro/publicaciones/likes/lista
+  script: handlers.likes.lista_likes.app
+  login: required
+
+- url: /
+  script: handlers.principio.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+- name: jinja2
+  version: "latest"

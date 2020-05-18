@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="061c28ef-9c4e-4efc-bfff-22e7ecc18a5a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Zu2rj2kj0TasZLExIZJ7cZBOgi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../proyectojinja2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jorgi\PycharmProjects\untitled2\templates\assets" />
+      <recent name="C:\Users\jorgi\PycharmProjects\untitled2\templates\assets\img" />
+      <recent name="C:\Users\jorgi\PycharmProjects\untitled2\handlers" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="untitled2" type="Python.AppEngineServer" factoryName="App Engine server">
+      <module name="untitled2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="127.0.0.1" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="061c28ef-9c4e-4efc-bfff-22e7ecc18a5a" name="Default Changelist" comment="" />
+      <created>1585674858159</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585674858159</updated>
+      <workItem from="1585674860110" duration="3102000" />
+      <workItem from="1585678383027" duration="5110000" />
+      <workItem from="1586873876338" duration="5964000" />
+      <workItem from="1588844555095" duration="41100000" />
+      <workItem from="1589116360791" duration="4597000" />
+      <workItem from="1589810423855" duration="1004000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="579" y="172" key="FileChooserDialogImpl" timestamp="1588844869996">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="579" y="172" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1588844869996" />
+    <state width="1557" height="334" key="GridCell.Tab.0.bottom" timestamp="1589117760323">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="334" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1589117760323" />
+    <state width="1557" height="334" key="GridCell.Tab.0.center" timestamp="1589117760323">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="334" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1589117760323" />
+    <state width="1557" height="334" key="GridCell.Tab.0.left" timestamp="1589117760323">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="334" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1589117760323" />
+    <state width="1557" height="334" key="GridCell.Tab.0.right" timestamp="1589117760323">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="334" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1589117760323" />
+    <state x="495" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1588844761945">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="495" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1588844761945" />
+    <state x="497" y="28" width="606" height="804" key="find.popup" timestamp="1589021915954">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="497" y="28" width="606" height="804" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1589021915954" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/untitled2$untitled2.coverage" NAME="untitled2 Coverage Results" MODIFIED="1589810453233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
